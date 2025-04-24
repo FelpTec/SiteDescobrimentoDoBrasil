@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quiz Interativo com curiosidades sobre o Descobrimento do Brasil">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <a href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M3 9.75 12 3l9 6.75V21a.75.75 0 0 1-.75.75H3.75A.75.75 0 0 1 3 21V9.75Z"/>
+        <path d="M9 22.5V12h6v10.5"/>
+      </svg>
+    </a>
+  </div>
+  <nav class="header-right">
+    <a href="index.html">Contexto</a>
+    <a href="Curiosidades.html">Curiosidades</a>
+    <a href="Quiz.html">Quiz</a>
+  </nav>
+</header>
+
+<section id="quiz" class="quiz">
+  <h2>Quiz</h2>
+  <form id="quiz-form">
+
+    <!-- Pergunta 1 -->
+    <fieldset>
+      <h2>Quem comandava a esquadra que chegou ao Brasil?</h2>
+      <label><input type="radio" name="q1" value="errado"> Vasco da Gama</label><br>
+      <label><input type="radio" name="q1" value="certo" required> Pedro Álvares Cabral</label><br>
+      <label><input type="radio" name="q1" value="errado"> Cristóvão Colombo</label><br>
+      <span class="feedback" id="feedback-q1"></span>
+    </fieldset><br>
+
+    <!-- Pergunta 2 -->
+    <fieldset>
+      <h2>Em que ano o Brasil foi "descoberto" pelos portugueses?</h2>
+      <label><input type="radio" name="q2" value="certo"> 1500</label><br>
+      <label><input type="radio" name="q2" value="errado"> 1492</label><br>
+      <label><input type="radio" name="q2" value="errado"> 1530</label><br>
+      <span class="feedback" id="feedback-q2"></span>
+    </fieldset><br>
+
+    <!-- Pergunta 3 -->
+    <fieldset>
+      <h2>Qual foi o primeiro nome dado ao Brasil?</h2>
+      <label><input type="radio" name="q3" value="certo"> Ilha de Vera Cruz</label><br>
+      <label><input type="radio" name="q3" value="errado"> Terra do Brasil</label><br>
+      <label><input type="radio" name="q3" value="errado"> Terra de Santa Cruz</label><br>
+      <span class="feedback" id="feedback-q3"></span>
+    </fieldset><br>
+
+    <!-- Pergunta 4 -->
+    <fieldset>
+      <h2>Quem escreveu a famosa carta relatando a chegada ao Brasil?</h2>
+      <label><input type="radio" name="q4" value="certo"> Pero Vaz de Caminha</label><br>
+      <label><input type="radio" name="q4" value="errado"> Pedro Álvares Cabral</label><br>
+      <label><input type="radio" name="q4" value="errado"> Bartolomeu Dias</label><br>
+      <span class="feedback" id="feedback-q4"></span>
+    </fieldset><br>
+
+    <!-- Pergunta 5 -->
+    <fieldset>
+      <h2>Qual povo indígena foi um dos primeiros a ter contato com os portugueses?</h2>
+      <label><input type="radio" name="q5" value="certo"> Tupinambá</label><br>
+      <label><input type="radio" name="q5" value="errado"> Guarani</label><br>
+      <label><input type="radio" name="q5" value="errado"> Yanomami</label><br>
+      <span class="feedback" id="feedback-q5"></span>
+    </fieldset><br>
+
+    <!-- Pergunta 6 -->
+    <fieldset>
+      <h2>Qual religião os portugueses trouxeram para o Brasil?</h2>
+      <label><input type="radio" name="q6" value="certo"> Catolicismo</label><br>
+      <label><input type="radio" name="q6" value="errado"> Protestantismo</label><br>
+      <label><input type="radio" name="q6" value="errado"> Ortodoxa</label><br>
+      <span class="feedback" id="feedback-q6"></span>
+    </fieldset><br>
+
+    <button class="botao" type="submit">Enviar Respostas</button>
+    <p id="resultado-quiz"></p>
+  </form>
+</section>
+<script src="scripts.js"></script>
+</body>
+</html>
