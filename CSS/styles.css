@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: hsl(40, 100%, 90%);
@@ -148,9 +153,6 @@ img {
 .botao-historico:hover {
   background-color: #a87f53;
   transform: scale(1.03);
-}
-html {
-  scroll-behavior: smooth;
 }
 
 footer {
@@ -310,3 +312,95 @@ fieldset {
   text-align: left;
 }
 
+/*Estilização CSS Linha Do Tempo*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hsl(40, 100%, 90%);
+  color: #3e2f1c;
+  line-height: 1.6;
+}
+img{
+  width: 400px;
+}
+.header-left svg {
+  width: 32px;
+  height: 32px;
+  stroke: white;
+  cursor: pointer;
+}
+
+.header-right a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-right a:hover {
+  color: #f2c184;
+}
+h1{ font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow:2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #24282e;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  border-left: 2px solid #333;
+}
+
+.event {
+  margin: 20px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.event h2 {
+  background-color: #b1856e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.event p {
+  background-color: #fbdac2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #8f4a4a;
+  border-radius: 50%;
+}
+.event {
+  transition: transform 0.5s ease;
+  transform-origin: left center;
+}
+
+.event:hover {
+  transform: scale(1.1);
+  background-color: #e9d3b8;
+}
+
+.event-description {
+  display: none;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.event:hover .event-description {
+  display: block;
+}
